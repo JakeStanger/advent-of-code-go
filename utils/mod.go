@@ -12,15 +12,17 @@ func Check(err error) {
 	}
 }
 
-func GetInput(year int, day int) []string {
+func GetInput(year int, day int) string {
 	fileName := fmt.Sprintf("inputs/%d/%02d", year, day)
 	bytes, err := os.ReadFile(fileName)
 	Check(err)
 
-	input := string(bytes)
-	lines := strings.Split(input, "\n")
+	return string(bytes)
+}
 
-	return lines
+func GetInputLines(year int, day int) []string {
+	input := GetInput(year, day)
+	return strings.Split(input, "\n")
 }
 
 func Copy[T any](slice []T) []T {

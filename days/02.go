@@ -39,7 +39,7 @@ func getUnsafeIndex(lineValues []int, ignoreIndex int) int {
 }
 
 func Day2Part1() int {
-	input := utils.GetInput(2024, 2)
+	input := utils.GetInputLines(2024, 2)
 
 	var numSafe int
 
@@ -62,7 +62,7 @@ func Day2Part1() int {
 }
 
 func Day2Part2() int {
-	input := utils.GetInput(2024, 2)
+	input := utils.GetInputLines(2024, 2)
 
 	var numSafe int
 

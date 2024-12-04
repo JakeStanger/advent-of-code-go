@@ -30,7 +30,7 @@ func check(lines []string, i int, j int, vStep int, hStep int, word string) bool
 }
 
 func Day4Part1() int {
-	input := utils.GetInput(2024, 4)
+	input := utils.GetInputLines(2024, 4)
 
 	var count int
 	for i, line := range input {
@@ -54,7 +54,7 @@ func Day4Part1() int {
 }
 
 func Day4Part2() int {
-	input := utils.GetInput(2024, 4)
+	input := utils.GetInputLines(2024, 4)
 
 	var count int
 	for i := 1; i < len(input)-1; i++ {

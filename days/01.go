@@ -9,7 +9,7 @@ import (
 )
 
 func getLists() ([]int, []int) {
-	lines := utils.GetInput(2024, 01)
+	lines := utils.GetInputLines(2024, 01)
 
 	var left []int
 	var right []int
