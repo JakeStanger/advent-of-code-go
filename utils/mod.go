@@ -22,3 +22,13 @@ func GetInput(year int, day int) []string {
 
 	return lines
 }
+
+func Copy[T any](slice []T) []T {
+	tmp := make([]T, len(slice))
+	copy(tmp, slice)
+	return tmp
+}
+
+func Remove[T any](slice []T, index int) []T {
+	return append(slice[:index], slice[index+1:]...)
+}

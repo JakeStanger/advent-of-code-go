@@ -10,4 +10,5 @@ func main() {
 	fmt.Printf("2024 01-2: %d\n", days.Day1Part2())
 
 	fmt.Printf("2024 02-1: %d\n", days.Day2Part1())
+	fmt.Printf("2024 02-2: %d\n", days.Day2Part2())
 }
